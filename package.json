@@ -1,0 +1,38 @@
+{
+  "name": "lodash-require",
+  "version": "1.0.0",
+  "description": "Simple helper to provide webpack friendly lodash includes",
+  "main": "lib/require.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/elliotttf/lodash-require.git"
+  },
+  "keywords": [
+    "lodash"
+  ],
+  "author": "Elliott Foster <elliottf@codebrews.com> (http://codebrews.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elliotttf/lodash-require/issues"
+  },
+  "homepage": "https://github.com/elliotttf/lodash-require#readme",
+  "devDependencies": {
+    "ghooks": "^0.3.2",
+    "gulp": "^3.9.0",
+    "gulp-coveralls": "^0.1.4",
+    "gulp-eslint": "^1.0.0",
+    "gulp-istanbul": "^0.8.1",
+    "gulp-nodeunit": "^0.0.5",
+    "lodash": "^3.10.1",
+    "nodeunit": "^0.9.1"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "gulp lint",
+      "pre-push": "gulp test"
+    }
+  }
+}
